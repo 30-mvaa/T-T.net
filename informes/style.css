@@ -1,0 +1,89 @@
+boby{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif, tahoma, sans-serif;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1{
+ 
+    margin-bottom:  2rem;
+    text-align: center;
+
+}
+
+.content{
+    width: 60%;
+    margin: 0 auto;
+}
+
+canvas{
+    max-width: 100%;
+   
+   
+}
+
+
+/*  saldo ---------*/
+.cantidad {
+    display: inline-block;
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 2px solid #333; /* Color del contorno */
+    padding: 20px;
+    margin: 5px; /* Distancia entre cada elemento */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    width: 180px; /* Ancho de cada bloque */
+    transition: background-color 0.3s ease; /* Efecto de transición para hover */
+}
+
+.cantidad:hover {
+    background-color: #a8d1ff; /* Color de fondo cuando se pasa el mouse */
+}
+
+.cantidad h1 {
+    font-size: 18px;
+    color: #333; /* Color del texto */
+}
+
+span {
+    color:  #2f2d84; /* Color del valor numérico */
+}
+
+/* Estilo para el label del select */
+label[for="chartType"] {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilo para el select */
+#chartType {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Estilo para el select cuando está enfocado */
+#chartType:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline: none;
+}
+
+/* Estilo adicional opcional para mejorar la visualización en dispositivos móviles */
+@media (max-width: 576px) {
+    #chartType {
+        font-size: 14px;
+    }
+}
+
+

@@ -1,0 +1,47 @@
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: gray; /* Fondo plomo */
+    table-layout: 20px; /* Hace que todas las columnas tengan el mismo ancho */
+    border-collapse: collapse; /* Opcional: para eliminar el espacio entre bordes */
+}
+
+.table th, .table td {
+    width: calc(100% / 17); /* Divide el ancho de la tabla entre el número de columnas (17 columnas en total) */
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #2f2d84; /* Color de fondo del encabezado */
+    color: white; /* Color de texto del encabezado */
+}
+
+.table-hover tbody tr:hover {
+    background-color: green; /* Hover verde */
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .header_information {
+        text-align: center;
+    }
+
+    .sign_btn {
+        margin-top: 10px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+}

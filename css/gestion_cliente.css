@@ -1,0 +1,57 @@
+/* Estilo general de la tabla */
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+table th {
+    width: 300px; /* Controla el ancho de cada columna de encabezado */
+}
+
+
+/* Estilo para las celdas de la tabla */
+table th, table td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Estilo para las filas impares (striped) */
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para las filas al pasar el mouse */
+table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo para los encabezados de la tabla */
+table th {
+    background-color: #2f2d84;
+    color: white;
+    font-size: 18px;
+}
+
+/* Estilo para los íconos de modificar y eliminar */
+table td a img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Aumentar el tamaño del ícono al pasar el mouse */
+table td a img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo para centrar el contenido de las celdas */
+table td {
+    vertical-align: middle;
+}
